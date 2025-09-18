@@ -15,14 +15,9 @@ export function Projects() {
   const defaultInfo = {
     title: "프로젝트",
     subtitle: "프로젝트",
-    initialDisplay: 6,
-    loadMoreCount: 3,
-    background: {
-      image: "",
-      video: "",
-      color: "",
-      opacity: 0.1
-    },
+    initialDisplay: 3,
+    loadMoreCount: 6,
+    background: {"image":"","video":"","color":"","opacity":0.1},
     projects: [] as Array<{ image: string; video?: string; title: string; description: string }>
   }
 

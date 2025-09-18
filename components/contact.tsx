@@ -34,14 +34,14 @@ export function Contact() {
   
   // 기본 데이터
   const defaultInfo = {
-    name: "당신의 이름",
-    title: "직책/직무",
-    company: "",
-    experience: "3년 경력",
+    name: "유복길",
+    title: "대표",
+    company: "복길엔터테이너먼트",
+    experience: "32년",
     phone: "010-0000-0000",
-    email: "your-email@example.com",
+    email: "유복길@복길.com",
     website: "",
-    location: "당신의 위치",
+    location: "대한민국",
     workTime: "평일 09:00 - 18:00",
     responseTime: "24시간 이내 응답",
     sectionTitle: "연락처",
@@ -51,12 +51,18 @@ export function Contact() {
     bottomMessage: "함께 성장하는 파트너가 되겠습니다.",
     bottomSubMessage: "고객님의 성공적인 프로젝트를 위해 최선을 다하겠습니다.",
     qrContent: ["name","phone","email","location","website"],
-    profileEmoji: "👤",
+    profileEmoji: "ㄴ👤ㄱ",
     background: {"image":"","video":"","color":"","opacity":0.1}
   }
   
   // 소셜 링크 기본값 (배열 형태로 변경)
-  const defaultSocialLinks: { name: string; icon: string; url: string }[] = []
+  const defaultSocialLinks: { name: string; icon: string; url: string }[] = [
+    {
+      "name": "새 링크",
+      "icon": "globe",
+      "url": ""
+    }
+  ]
   
   const [contactInfo, setContactInfo] = useState(defaultInfo)
   const [socialLinks, setSocialLinks] = useState(defaultSocialLinks)
