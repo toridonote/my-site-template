@@ -34,9 +34,9 @@ export function Footer() {
     location: "당신의 위치",
     copyright: "",
     showMadeWith: true,
-    madeWithLocation: "Mrbaeksang",
+    madeWithLocation: "",
     showTemplateCredit: true,
-    templateCreator: {"name":"백상","youtube":"https://www.youtube.com/@Mrbaeksang95/videos","website":"https://devcom.kr/","email":"qortkdgus95@gmail.com"},
+    templateCreator: {"name":"","youtube":"","website":"","email":""},
     showScrollTop: true
   }
 
