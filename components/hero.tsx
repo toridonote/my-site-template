@@ -40,7 +40,7 @@ export function Hero() {
     name: "당신의 이름",
     title: "프론트엔드 개발자",
     description: "창의적인 아이디어로 웹 경험을 디자인합니다.",
-    profileImage: "",
+    profileImage: "/uploads/hero-profile-1758182245011.png",
     background: {"image":"","video":"","color":"","opacity":0.1},
     projectButton: "프로젝트 보기"
   }
