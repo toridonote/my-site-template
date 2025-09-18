@@ -42,22 +42,7 @@ export function Footer() {
 
   const [footerInfo, setFooterInfo] = useState(defaultInfo)
 
-  // localStorage에서 데이터 로드
-  useEffect(() => {
-    // 푸터 정보 로드
-    const savedData = getData('footer-info')
-    if (savedData) {
-      // Made with와 템플릿 크레딧은 편집 불가이므로 기본값 유지
-      setFooterInfo({ 
-        ...defaultInfo, 
-        ...savedData,
-        showMadeWith: defaultInfo.showMadeWith,
-        madeWithLocation: defaultInfo.madeWithLocation,
-        showTemplateCredit: defaultInfo.showTemplateCredit,
-        templateCreator: defaultInfo.templateCreator
-      })
-    }
-    
+ 
     // 헤더 네비게이션 데이터도 함께 로드
     const navConfig = getData('nav-config') as { items?: Array<{name: string, url: string, icon: string, show: boolean}> } | null
     if (navConfig?.items) {
