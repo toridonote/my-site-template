@@ -32,7 +32,11 @@ export function Header() {
     showNavBar: true,
     showThemeToggle: true,
     items: [{"name":"홈","url":"#hero","icon":"Home","show":true},{"name":"소개","url":"#about","icon":"User","show":true},{"name":"프로젝트","url":"#projects","icon":"Briefcase","show":true},{"name":"연락처","url":"#contact","icon":"Mail","show":true},{"name":"갤러리","url":"#gallery","icon":"Camera","show":false},{"name":"블로그","url":"#blog","icon":"Book","show":false}],
+<<<<<<< HEAD
     document.title = siteTitle: "야호 성공이다"
+=======
+    siteTitle: "야호 성공"
+>>>>>>> 1731b45 (작업 내용 요약)
   }
   
   // defaultConfig의 아이콘을 컴포넌트로 변환한 상태로 초기화
