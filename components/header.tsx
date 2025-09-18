@@ -51,7 +51,7 @@ export function Header() {
   // localStorage에서 데이터 로드
   useEffect(() => {
     // 사이트 제목 복원
-    const savedTitle = getData('site-title') as string | null
+    const savedTitle = getData('document.title') as string | null
     if (savedTitle) {
       setSiteTitle(savedTitle)
       document.title = savedTitle
