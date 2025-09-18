@@ -33,9 +33,9 @@ export function Footer() {
     email: "유복길@복길.com",
     location: "대한민국",
     copyright: "",
-    showMadeWith: true,
+    showMadeWith: "",
     madeWithLocation: "",
-    showTemplateCredit: true,
+    showTemplateCredit: "",
     templateCreator: {"name":"","youtube":"","website":"","email":""},
     showScrollTop: true
   }
@@ -73,8 +73,8 @@ export function Footer() {
 
   const updateFooterInfo = async (key: string, value: string | boolean) => {
     // Made with와 템플릿 크레딧 관련 필드는 수정 불가
-    if (key === 'showMadeWith' || key === 'madeWithLocation' || 
-        key === 'showTemplateCredit' || key === 'templateCreator') {
+    if (key === '' || key === '' || 
+        key === '' || key === '') {
       return
     }
     const newInfo = { ...footerInfo, [key]: value }
