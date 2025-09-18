@@ -205,51 +205,6 @@ export function Footer() {
             )}
           </div>
           
-          {/* Made with 메시지 & 템플릿 크레딧 */}
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            {footerInfo.showMadeWith && (
-              <span className="flex items-center">
-                Made with <Heart className="h-3 w-3 mx-1 text-red-500" />
-                {footerInfo.madeWithLocation && `in ${footerInfo.madeWithLocation}`}
-              </span>
-            )}
-            
-            {/* 템플릿 제작자 크레딧 (편집 불가) */}
-            {footerInfo.showTemplateCredit && footerInfo.templateCreator && (
-              <>
-                {footerInfo.showMadeWith && <span className="text-muted-foreground/50">•</span>}
-                <span className="text-xs text-muted-foreground/70"> hi hello</span>
-                <div className="flex items-center gap-1">
-                  <a 
-                    href={`mailto:${footerInfo.templateCreator.email}`}
-                    className="inline-flex items-center justify-center w-6 h-6 rounded-full hover:bg-muted transition-colors"
-                    aria-label="Email"
-                  >
-                    <Mail className="h-3 w-3 text-muted-foreground/70 hover:text-muted-foreground" />
-                  </a>
-                  <a 
-                    href={footerInfo.templateCreator.youtube}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-6 h-6 rounded-full hover:bg-muted transition-colors"
-                    aria-label="YouTube"
-                  >
-                    <Youtube className="h-3 w-3 text-muted-foreground/70 hover:text-muted-foreground" />
-                  </a>
-                  <a 
-                    href={footerInfo.templateCreator.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-6 h-6 rounded-full hover:bg-muted transition-colors"
-                    aria-label="DevCom"
-                  >
-                    <Globe className="h-3 w-3 text-muted-foreground/70 hover:text-muted-foreground" />
-                  </a>
-                </div>
-              </>
-            )}
-          </div>
-
           {/* 맨 위로 버튼 */}
           {footerInfo.showScrollTop && (
             <button
