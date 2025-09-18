@@ -32,7 +32,7 @@ export function Header() {
     showNavBar: true,
     showThemeToggle: true,
     items: [{"name":"홈","url":"#hero","icon":"Home","show":true},{"name":"소개","url":"#about","icon":"User","show":true},{"name":"프로젝트","url":"#projects","icon":"Briefcase","show":true},{"name":"연락처","url":"#contact","icon":"Mail","show":true},{"name":"갤러리","url":"#gallery","icon":"Camera","show":false},{"name":"블로그","url":"#blog","icon":"Book","show":false}],
-    siteTitle: "자유로운 포폴"
+    siteTitle: "토리"
   }
   
   // defaultConfig의 아이콘을 컴포넌트로 변환한 상태로 초기화
@@ -203,7 +203,7 @@ export function Header() {
                     value={siteTitle}
                     onChange={(e) => updateNavConfig('siteTitle', e.target.value)}
                     className="w-full px-3 py-2 border rounded-lg bg-background"
-                    placeholder=""
+                    placeholder="토리"
                   />
                 </div>
               </div>
@@ -220,7 +220,7 @@ export function Header() {
                     value={navConfig.logo}
                     onChange={(e) => updateNavConfig('logo', e.target.value)}
                     className="w-full px-3 py-2 border rounded-lg bg-background"
-                    placeholder=""
+                    placeholder="토리"
                   />
                 </div>
               </div>
