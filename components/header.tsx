@@ -46,7 +46,7 @@ export function Header() {
     }))
   })
   const [showEditModal, setShowEditModal] = useState(false)
-  const [siteTitle, setSiteTitle] = useState('나의 포트폴리오')
+  const [siteTitle, setSiteTitle] = useState('')
   
   // localStorage에서 데이터 로드
   useEffect(() => {
@@ -203,7 +203,7 @@ export function Header() {
                     value={siteTitle}
                     onChange={(e) => updateNavConfig('siteTitle', e.target.value)}
                     className="w-full px-3 py-2 border rounded-lg bg-background"
-                    placeholder="나의 포트폴리오"
+                    placeholder=""
                   />
                 </div>
               </div>
@@ -220,7 +220,7 @@ export function Header() {
                     value={navConfig.logo}
                     onChange={(e) => updateNavConfig('logo', e.target.value)}
                     className="w-full px-3 py-2 border rounded-lg bg-background"
-                    placeholder="나의 포트폴리오"
+                    placeholder=""
                   />
                 </div>
               </div>
