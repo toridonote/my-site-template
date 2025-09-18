@@ -218,7 +218,7 @@ export function Footer() {
             {footerInfo.showTemplateCredit && footerInfo.templateCreator && (
               <>
                 {footerInfo.showMadeWith && <span className="text-muted-foreground/50">•</span>}
-                <span className="text-xs text-muted-foreground/70">Template by Mrbaeksang</span>
+                <span className="text-xs text-muted-foreground/70"> hi hello</span>
                 <div className="flex items-center gap-1">
                   <a 
                     href={`mailto:${footerInfo.templateCreator.email}`}
